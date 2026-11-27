@@ -1,0 +1,277 @@
+/* ==========================================
+   FELIPEDEV — RESPONSIVIDADE
+
+   Cada breakpoint aparece uma única vez.
+   Dentro dele, os ajustes seguem a ordem do style.css:
+   cabeçalho, hero, seções, habilidades, projetos.
+
+   ÍNDICE
+   1. Tablets            (até 992px)
+   2. Celulares          (até 768px)
+   3. Celulares pequenos (até 480px)
+========================================== */
+
+
+/* ==========================================
+   1. TABLETS (até 992px)
+========================================== */
+
+@media (max-width: 992px) {
+
+    /* Cabeçalho */
+    .nav-menu {
+        gap: 20px;
+    }
+
+    /* Hero: o painel de código desce para baixo do texto */
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 72px;
+    }
+
+    .hero h1 {
+        margin-bottom: 44px;
+    }
+
+    .hero-body {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
+
+    .hero-code {
+        max-width: 460px;
+    }
+
+    /* Sobre e projeto em destaque: uma coluna */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .project-featured {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Habilidades: as tags descem para a linha de baixo */
+    .skill-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-row .skill-tags {
+        grid-column: 1 / -1;
+        justify-content: flex-start;
+    }
+
+    /* Grade da página de projetos: 3 colunas viram 2 */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   2. CELULARES (até 768px)
+========================================== */
+
+@media (max-width: 768px) {
+
+    :root {
+        --gutter: 6%;
+    }
+
+    /* Cabeçalho e menu mobile */
+    .header {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    /* O painel se ancora no .header (que é sticky),
+       então ocupa a largura total sem ajustes de margem */
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: 0;
+
+        padding: 8px var(--gutter) 18px;
+        background-color: var(--grafite);
+        border-top: 1px solid var(--dourado);
+        border-bottom: 1px solid var(--borda);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--borda-neutra);
+        font-size: 16px;
+    }
+
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    /* Hero: nome primeiro (a foto vai junto, dentro dele), tudo à esquerda */
+    .hero {
+        padding-top: 44px;
+        padding-bottom: 60px;
+    }
+
+    .hero-tag {
+        margin-bottom: 28px;
+    }
+
+    .hero h1 {
+        margin-bottom: 32px;
+        font-size: clamp(44px, 13vw, 76px);
+        line-height: 1;
+    }
+
+    /* Foto um pouco maior no celular, para o rosto aparecer */
+    .hero-photo {
+        width: 1.5em;
+        height: 0.92em;
+        vertical-align: -0.12em;
+    }
+
+    .hero-role {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-body {
+        gap: 36px;
+    }
+
+    /* Faixa de tecnologias */
+    .stack-list {
+        justify-content: center;
+        gap: 10px 22px;
+    }
+
+    .stack-list li {
+        flex: 0 0 auto;
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .stack-list li + li {
+        border-left: none;
+    }
+
+    /* Seções */
+    section:not(.hero) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    section:not(.hero) .section-title {
+        margin-bottom: 40px;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+
+    /* Habilidades */
+    .skill-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 28px 0;
+    }
+
+    .skill-row .skill-tags {
+        grid-column: auto;
+    }
+
+    /* Projetos */
+    .project-featured {
+        padding: 28px;
+    }
+
+    .projects-secondary,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================
+   3. CELULARES PEQUENOS (até 480px)
+========================================== */
+
+@media (max-width: 480px) {
+
+    /* Cabeçalho */
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-menu a {
+        font-size: 15px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 36px;
+        padding-bottom: 52px;
+    }
+
+    .hero-tag {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-code pre {
+        padding: 18px 16px 20px;
+        font-size: 12.5px;
+    }
+
+    /* Seções */
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .project-card,
+    .project-featured {
+        padding: 24px;
+    }
+
+    .project-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}

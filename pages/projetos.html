@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Projetos de Felipe Marques Vieira em Linguagem C, Python, SQL e desenvolvimento web, incluindo o sistema FM SPORTS.">
+
+    <title>Projetos | FelipeDev</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="../images/icones/favicon.svg" type="image/svg+xml">
+
+    <!-- FONTES: PLUS JAKARTA SANS + ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegação principal">
+
+            <a href="../index.html" class="logo">FELIPE<span>DEV</span><span class="logo-dot">.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="sobre.html">Sobre mim</a></li>
+                <li><a href="../index.html#habilidades">Habilidades</a></li>
+                <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+                <li><a href="../index.html#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="page-content">
+
+        <!-- Abertura da página -->
+        <header class="page-header">
+            <p class="page-kicker">Projetos</p>
+
+            <h1>O que já <span>construí</span>.</h1>
+
+            <p class="page-lead">
+                Do exercício em C ao sistema web publicado. Use os filtros
+                para ver os projetos por tecnologia.
+            </p>
+        </header>
+
+        <!-- FILTROS + CONTADOR -->
+        <div class="filters-bar">
+
+            <div class="project-filters" role="group" aria-label="Filtrar projetos por tecnologia">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+                <button type="button" class="filter-btn" data-filter="c" aria-pressed="false">Linguagem C</button>
+                <button type="button" class="filter-btn" data-filter="python" aria-pressed="false">Python e SQL</button>
+                <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Desenvolvimento Web</button>
+            </div>
+
+            <p class="filter-count" id="filter-count" aria-live="polite">3 projetos</p>
+
+        </div>
+
+        <!-- PROJETOS -->
+        <div class="projects-container">
+
+            <!-- Projeto principal -->
+            <article class="project-card project-card-featured" data-category="web python">
+
+                <div class="project-card-main">
+
+                    <p class="card-kicker">Desenvolvimento web · Python</p>
+
+                    <h2>Sistema FM SPORTS</h2>
+
+                    <p class="project-card-text">
+                        Sistema web de controle de estoque para gerenciar
+                        produtos, quantidades e valores, com painel de
+                        indicadores e cadastro de novos itens.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://fm-sports-estoque.onrender.com/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-primary">
+                            Ver demonstração ↗
+                        </a>
+
+                        <a href="https://github.com/felipemarquesvieira/fm-sports-estoque"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-outline">
+                            Código no GitHub ↗
+                        </a>
+                    </div>
+
+                    <p class="project-note">
+                        A demonstração pode levar alguns segundos para carregar
+                        no primeiro acesso.
+                    </p>
+
+                </div>
+
+                <ul class="project-features">
+                    <li>Cadastro de produtos com nome, categoria, tamanho, quantidade e preço</li>
+                    <li>Controle das quantidades em estoque</li>
+                    <li>Indicadores de total de produtos, unidades, estoque baixo e valor do estoque</li>
+                    <li>Dados armazenados em SQLite</li>
+                </ul>
+
+            </article>
+
+            <article class="project-card" data-category="c">
+
+                <p class="card-kicker">Linguagem C</p>
+
+                <h2>Projetos em C</h2>
+
+                <p>
+                    Exercícios e aplicações desenvolvidos durante os estudos de
+                    programação, com vetores, funções, estruturas de repetição
+                    e sistemas de gerenciamento.
+                </p>
+
+                <div class="project-tags">
+                    <span>Linguagem C</span>
+                </div>
+
+            </article>
+
+            <article class="project-card" data-category="python">
+
+                <p class="card-kicker">Python e SQL</p>
+
+                <h2>Projetos em Python e SQL</h2>
+
+                <p>
+                    Atividades práticas de programação, banco de dados e
+                    manipulação de informações.
+                </p>
+
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>SQLite</span>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- Chamada final -->
+        <div class="page-cta">
+            <h2>Meu código está no <span>GitHub</span>.</h2>
+
+            <div class="page-cta-actions">
+                <a href="https://github.com/felipemarquesvieira"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn-primary">
+                    Acessar meu GitHub ↗
+                </a>
+
+                <a href="sobre.html" class="btn-outline">Sobre mim</a>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>© 2026 Felipe Marques Vieira. Todos os direitos reservados.</p>
+        <a href="#">Voltar ao topo ↑</a>
+    </footer>
+
+    <!-- JAVASCRIPT: menu e animações, depois os filtros -->
+    <script src="../js/script.js"></script>
+    <script src="../js/projetos.js"></script>
+
+</body>
+</html>
