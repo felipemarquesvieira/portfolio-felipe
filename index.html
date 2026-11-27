@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portfólio pessoal de Felipe Marques Vieira. Conheça minha trajetória acadêmica, habilidades e projetos.">
+
+    <title>FelipeDev | Portfólio</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/icones/favicon.svg" type="image/svg+xml">
+
+    <!-- FONTES: PLUS JAKARTA SANS + ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <nav class="navbar" aria-label="Navegação principal">
+
+            <a href="#inicio" class="logo">FELIPE<span>DEV</span><span class="logo-dot">.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="pages/projetos.html">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    <span class="status-dot"></span>
+                    Aberto a oportunidades em tecnologia
+                </span>
+
+                <!-- Nome em escala de cartaz, com a foto embutida na primeira linha -->
+                <h1>
+                    <span class="hero-name-line">
+                        Felipe
+                        <span class="hero-photo">
+                            <img src="images/perfil/minha-foto.jpg" alt=""
+                                width="320" height="420">
+                        </span>
+                    </span>
+                    <span class="hero-name-line hero-name-gold">Marques Vieira.</span>
+                </h1>
+
+                <div class="hero-body">
+
+                    <div class="hero-text">
+
+                        <p class="hero-role">
+                            Estudante de Análise e Desenvolvimento de Sistemas
+                        </p>
+
+                        <p class="hero-description">
+                            Estudo programação em C e Python, banco de dados com SQL e
+                            SQLite e desenvolvimento web com HTML, CSS e JavaScript.
+                            Um dos meus projetos é o
+                            <a href="https://github.com/felipemarquesvieira/fm-sports-estoque"
+                                target="_blank" rel="noopener noreferrer">FM SPORTS</a>,
+                            um sistema web de controle de estoque feito com Python,
+                            Flask e SQLite.
+                        </p>
+
+                        <div class="hero-buttons">
+
+                            <a href="pages/projetos.html" class="btn-primary">
+                                Explorar projetos →
+                            </a>
+
+                            <a href="https://github.com/felipemarquesvieira"
+                                target="_blank" rel="noopener noreferrer"
+                                class="btn-outline">
+                                GitHub ↗
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Resumo em formato de código (só fatos reais) -->
+                    <div class="hero-code">
+                        <div class="hero-code-bar">
+                            <span>felipe.js</span>
+                            <span>resumo</span>
+                        </div>
+<pre><code><span class="tk-kw">const</span> felipe <span class="tk-pun">= {</span>
+  <span class="tk-key">curso</span><span class="tk-pun">:</span> <span class="tk-str">"ADS"</span><span class="tk-pun">,</span>
+  <span class="tk-key">linguagens</span><span class="tk-pun">: [</span><span class="tk-str">"C"</span><span class="tk-pun">,</span> <span class="tk-str">"Python"</span><span class="tk-pun">],</span>
+  <span class="tk-key">dados</span><span class="tk-pun">: [</span><span class="tk-str">"SQL"</span><span class="tk-pun">,</span> <span class="tk-str">"SQLite"</span><span class="tk-pun">],</span>
+  <span class="tk-key">web</span><span class="tk-pun">: [</span><span class="tk-str">"HTML"</span><span class="tk-pun">,</span> <span class="tk-str">"CSS"</span><span class="tk-pun">,</span> <span class="tk-str">"JavaScript"</span><span class="tk-pun">],</span>
+  <span class="tk-key">projeto</span><span class="tk-pun">:</span> <span class="tk-str">"FM SPORTS"</span><span class="tk-pun">,</span>
+<span class="tk-pun">};</span><span class="hero-code-cursor"></span></code></pre>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAIXA DE TECNOLOGIAS -->
+        <div class="stack-band">
+            <ul class="stack-list" aria-label="Tecnologias que estudo">
+                <li>Linguagem C</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>SQLite</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+
+
+        <!-- SOBRE -->
+        <section id="sobre" class="about">
+
+            <div class="section-title">
+                <p>Um pouco sobre mim</p>
+                <h2>Conheça minha <span>trajetória</span></h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-content">
+
+                    <p>
+                        Sou estudante de Análise e Desenvolvimento de Sistemas
+                        e estudo três frentes: programação, banco de dados e
+                        desenvolvimento web.
+                    </p>
+
+                    <p>
+                        Em Linguagem C, pratico vetores, funções, estruturas de
+                        repetição e sistemas de gerenciamento. Em Python e SQL,
+                        faço atividades de programação, banco de dados e
+                        manipulação de informações.
+                    </p>
+
+                    <p>
+                        O FM SPORTS reúne essas frentes em um sistema só: Python
+                        e Flask no servidor, SQLite para os dados e uma interface
+                        web com painel de indicadores, tabela de produtos e
+                        cadastro de novos itens. Ele está publicado e pode ser
+                        testado online.
+                    </p>
+
+                    <a href="pages/sobre.html" class="btn-outline">
+                        Saiba mais sobre mim →
+                    </a>
+
+                </div>
+
+                <dl class="about-facts">
+
+                    <div>
+                        <dt>Formação</dt>
+                        <dd>Análise e Desenvolvimento de Sistemas</dd>
+                    </div>
+
+                    <div>
+                        <dt>Tecnologias</dt>
+                        <dd>C, Python, SQL, SQLite, HTML, CSS e JavaScript</dd>
+                    </div>
+
+                    <div>
+                        <dt>Projeto em destaque</dt>
+                        <dd>
+                            <a href="https://fm-sports-estoque.onrender.com/"
+                                target="_blank" rel="noopener noreferrer">
+                                FM SPORTS, controle de estoque
+                            </a>
+                        </dd>
+                    </div>
+
+                    <div>
+                        <dt>GitHub</dt>
+                        <dd>
+                            <a href="https://github.com/felipemarquesvieira"
+                                target="_blank" rel="noopener noreferrer">
+                                github.com/felipemarquesvieira
+                            </a>
+                        </dd>
+                    </div>
+
+                </dl>
+
+            </div>
+
+        </section>
+
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="skills">
+
+            <div class="section-title">
+                <p>Meus conhecimentos</p>
+                <h2>Tecnologias que <span>utilizo</span></h2>
+            </div>
+
+            <ul class="skill-list">
+
+                <li class="skill-row">
+                    <h3>Desenvolvimento web</h3>
+                    <p>Estrutura com HTML, layout responsivo com CSS e interações com JavaScript, como neste portfólio.</p>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </li>
+
+                <li class="skill-row">
+                    <h3>Programação</h3>
+                    <p>Lógica e algoritmos em C e Python. Python também é a base do FM SPORTS, com Flask.</p>
+                    <div class="skill-tags">
+                        <span>Linguagem C</span>
+                        <span>Python</span>
+                    </div>
+                </li>
+
+                <li class="skill-row">
+                    <h3>Banco de dados</h3>
+                    <p>Consultas e manipulação de dados com SQL. SQLite é o banco do FM SPORTS.</p>
+                    <div class="skill-tags">
+                        <span>SQL</span>
+                        <span>SQLite</span>
+                    </div>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- PROJETOS -->
+        <section id="projetos" class="projects">
+
+            <div class="section-title">
+                <p>Meus trabalhos</p>
+                <h2>Projetos em <span>destaque</span></h2>
+            </div>
+
+            <!-- Projeto principal -->
+            <article class="project-featured">
+
+                <div class="project-featured-main">
+
+                    <p class="project-kicker">Desenvolvimento web</p>
+
+                    <h3>Sistema FM SPORTS</h3>
+
+                    <p class="project-featured-text">
+                        Sistema web de controle de estoque para gerenciar
+                        produtos, quantidades e valores, com painel de
+                        indicadores e cadastro de novos itens.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://fm-sports-estoque.onrender.com/"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-primary">
+                            Ver demonstração ↗
+                        </a>
+
+                        <a href="https://github.com/felipemarquesvieira/fm-sports-estoque"
+                            target="_blank" rel="noopener noreferrer"
+                            class="btn-outline">
+                            Código no GitHub ↗
+                        </a>
+                    </div>
+
+                    <p class="project-note">
+                        A demonstração pode levar alguns segundos para carregar
+                        no primeiro acesso.
+                    </p>
+
+                </div>
+
+                <ul class="project-features">
+                    <li>Cadastro de produtos com nome, categoria, tamanho, quantidade e preço</li>
+                    <li>Controle das quantidades em estoque</li>
+                    <li>Indicadores de total de produtos, unidades, estoque baixo e valor do estoque</li>
+                    <li>Dados armazenados em SQLite</li>
+                </ul>
+
+            </article>
+
+            <!-- Outros projetos -->
+            <div class="projects-secondary">
+
+                <article class="project-card project-premium-card">
+
+                    <h3>Projetos em C</h3>
+
+                    <p>
+                        Exercícios e aplicações desenvolvidos durante os
+                        estudos de programação, com vetores, funções,
+                        estruturas de repetição e sistemas de gerenciamento.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Linguagem C</span>
+                    </div>
+
+                    <a href="pages/projetos.html" class="project-link">
+                        Ver todos os projetos <span>→</span>
+                    </a>
+
+                </article>
+
+                <article class="project-card project-premium-card">
+
+                    <h3>Projetos em Python e SQL</h3>
+
+                    <p>
+                        Atividades práticas de programação, banco de dados
+                        e manipulação de informações.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>SQLite</span>
+                    </div>
+
+                    <a href="pages/projetos.html" class="project-link">
+                        Ver todos os projetos <span>→</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+            <div class="projects-action">
+                <a href="pages/projetos.html" class="btn-primary">
+                    Explorar todos os projetos →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+        <section id="contato" class="contact">
+
+            <div class="contact-content">
+
+                <h2>Vamos conversar sobre <span>oportunidades</span>.</h2>
+
+                <p>
+                    Estou aberto a oportunidades, conexões e novos desafios
+                    na área de tecnologia. Meu código e meus projetos estão
+                    no GitHub.
+                </p>
+
+                <a href="https://github.com/felipemarquesvieira"
+                    target="_blank" rel="noopener noreferrer"
+                    class="btn-primary">
+                    Acessar meu GitHub →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Felipe Marques Vieira. Todos os direitos reservados.
+        </p>
+
+        <a href="#inicio">Voltar ao topo ↑</a>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
